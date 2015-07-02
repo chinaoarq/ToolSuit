@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+body { background-color: #eee; font-family: "droid-sans";}
+textarea { width: 720px; resize: none; border-radius: 10px; padding: 10px; color: #666; font-family: Monaco, Andale Mono, Courier New, monospace; }
+/* .output-textarea{width: 665px;} */
+small { display: block; }
+h1 { margin-left: 10px; }
+
+pre.prettyprint { border: 0px !important; background-color: #e6e6e6; font-size: 16px; }
+
+#about { font-size: 16px; }
+#copyCode { width: 92%; overflow: hidden; margin-bottom: 15px; }
+
+.twipsy-inner { background-color: #999; }
+.twipsy-arrow { border-bottom-color: #999 !important; }
+
+.alert-message.block-message { background-color: #e6e6e6; border: 1px solid #ccc; border-radius: 10px; padding:15px;}
+
+.result-message { 
+	position:relative;
+}
+.result-message .close{
+	position:absolute;
+	top:16px;
+	right:16px;
+}
+.about-section { width: 90%; margin: 0px 15px 0px 15px; }
+.about-section p { font-size: 16px; }
+.about-section p.title{font-size:18px; padding-top:15px}
+
+.container { margin: 20px; width: 720px; margin-left: auto; margin-right: auto; }
+.row { padding-bottom: 15px; }
+.right { float: right; }
+.label { color: #333; }
+.header p { margin-bottom: 0px; }
+.help-inline { color: #666; }
+
+.adsense { margin-left: 5px !important; }
+.credits { background-image: url('../images/bg-footer-credits.png'); width: 135px; height: 43px; }
+
+.pln{color:#000}@media screen{.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:#606}.lit{color:#066}.pun,.opn,.clo{color:#660}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun,.opn,.clo{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:2px;border:1px solid #888}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
