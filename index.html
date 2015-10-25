@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="container">
+	<div class="row header">
+		<div class="span6">
+			<h1>
+				love Coding <small>generate Java three tier template code<small>
+			</h1>
+		</div>
+		<div class="span6 right">
+			<p>
+				developed by <a href="http://weibo.com/fforfengfei/home" target="_blank">Fei Feng</a>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<input id="inputClassName" class="form-control" placeholder="Enter class name here..." autofocus/>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<textarea id="inputCode" rows="10" placeholder="Enter class fields here..."></textarea>
+		</div>
+	</div>
+	<div class="row">
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="createCheckbox" value="create" checked> create
+		</label>
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="updateCheckbox" value="update" checked> update
+		</label>
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="deleteCheckbox" value="delete" checked> delete
+		</label>
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="getByIdCheckbox" value="getById" checked> getById
+		</label>
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="getAllCheckbox" value="getAll"> getAll
+		</label>
+	</div>
+    <div class="row">
+        <div class="span7">
+            <button id="generate" class="btn btn-primary"> Generate</button>
+            <button id="show-about" class="btn right" title="how to use ?">?</button>
+        </div>
+    </div>
+    
+    <div id="generatedResult" class="row" style="display: none;">
+
+	  	<!-- Nav tabs -->
+	  	<ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#bo" aria-controls="bo" role="tab" data-toggle="tab">BLL Object</a></li>
+		    <li role="presentation"><a href="#bm" aria-controls="bm" role="tab" data-toggle="tab">BLL Manager</a></li>
+		    <li role="presentation"><a href="#do" aria-controls="do" role="tab" data-toggle="tab">DAL Object</a></li>
+		    <li role="presentation"><a href="#dm" aria-controls="dm" role="tab" data-toggle="tab">DAL Manager</a></li>
+	  	</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+		  <div role="tabpanel" class="tab-pane fade in active" id="bo">
+		  	<textarea rows="100"></textarea>
+		  </div>
+		  <div role="tabpanel" class="tab-pane fade" id="bm">
+		  	<textarea rows="100"></textarea>
+		  </div>
+		  <div role="tabpanel" class="tab-pane fade" id="do">
+		  	<textarea rows="100"></textarea>
+		  </div>
+		  <div role="tabpanel" class="tab-pane fade" id="dm">
+		  	<textarea rows="100"></textarea>
+		  </div>
+		</div>
+
+	</div>
+    
+    <div id="parse-error" class="row" style="display: none;">
+		<div class="span12">
+			<div class="alert alert-warning">
+				<a class="close" rel="close" href="#" data-parent-id="parse-error">
+			<span class="glyphicon glyphicon-remove"></span></a>
+				<p>
+					Parsing your Code didn't work. Please make sure	the format is valid and ClassName field is not empty.</p>
+				<p>
+					Already did that? Please <a href="mailto:china.arq@qq.com">let me know</a> so I
+					can fix it.</p>
+			</div>
+		</div>
+	</div>
+	<div id="about" class="row" style="display: none;">
+		<div class="span12">
+			<div class="alert-message block-message">
+				<a class="close" rel="close" href="#" data-parent-id="about">
+			<span class="glyphicon glyphicon-remove"></span></a>
+				<div class="about-section">
+					<p class="title"><strong>How</strong><p>
+					<p>
+						Simple! Copy the following code and paste into the large text area above, 
+						then click the <code>Generate</code> button. </p>
+					<p>&nbsp;</p>
+<pre>
+private int id;
+private int majorId;
+private String majorName;
+private int centerId;
+private String centerName;
+private String level;
+private String phoneNum;
+private String name;
+private String password;
+private String displayName;
+</pre>
+					<a href="#" class="btn btn-default btn-close" data-parent-id="about">Close</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+  </div>
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<script src="js/genJavaCode.js"></script>
+
+</body>
+</html>
